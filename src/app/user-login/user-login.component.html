@@ -1,0 +1,12 @@
+
+<div id="box" style="display: block; padding: 70px 50px 70px 50px; margin: auto; width: 400px; border-radius: 20px;">
+    <form [formGroup]="loginData" (ngSubmit)="onSubmit()" style="display: flex; flex-direction: column; text-align: left; margin: 0px 20px 0px 20px;">
+        <label for="email">Email: </label>
+        <input id="email" type="text" placeholder="abc@gmail.com" formControlName = "email">
+        <label for="password" >Password: </label>
+        <input id="password" type="password" formControlName="password">
+        <button id="submit" type="submit" >Login</button>
+    </form>
+</div>
+
+<h3>{{loginData.value.email}}</h3>
