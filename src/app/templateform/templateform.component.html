@@ -1,0 +1,11 @@
+
+<form #templateForm="ngForm" (ngSubmit)="onSubmit(templateForm.value)"> 
+    <input type="text" placeholder="Enter Your Name" name="name" ngModel> 
+    <span [hidden]="templateForm.controls['name'] && (templateForm.controls['name'].valid || templateForm.controls['name'].touched)" style="color: red;">Name is Required</span>
+    <input type="password" placeholder="Enter Password" name="password" ngModel>
+    <button type="submit" class="btn btn-default">submit</button>
+</form>
+
+<!-- two way binding -->
+<!-- <input [(ngModel)] = "id" type="number">
+<h1>{{id}}</h1> -->

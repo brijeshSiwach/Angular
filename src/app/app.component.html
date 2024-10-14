@@ -1,4 +1,14 @@
 
 <div style="display: flex; align-items: center; justify-content: center; height: 100vh; width: 100vw;">
-    <app-user-login></app-user-login>
+    <!-- <div *ngFor="let item of items"> 
+       <p>{{item.name}}</p>
+    </div> -->
+    <!-- <app-templateform></app-templateform> -->
+    <!-- <app-user-login (data) = "catch($event)"></app-user-login> --> 
+    
+     <!-- <app-user-login *ngIf = "!toggle"></app-user-login> -->
+     <!-- <app-user-sign-up *ngIf = "toggle"></app-user-sign-up> -->
+     <button (click)="show()"> Toggle </button>
+         <!-- <app-user-sign-up></app-user-sign-up> -->
+    <router-outlet></router-outlet>
 </div>
